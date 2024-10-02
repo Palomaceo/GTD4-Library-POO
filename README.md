@@ -50,6 +50,8 @@ class Book {
 }
 ```
 
+**Note :** Un **namespace** en PHP sert à organiser le code et éviter les conflits de noms entre les classes, fonctions, ou constantes. C'est particulièrement utile lorsque tu travailles sur des projets avec plusieurs bibliothèques ou des morceaux de code provenant de différentes sources, car cela permet de gérer les classes ayant des noms identiques sans entrer en conflit.
+
 ### 🏛️ Étape 2 : Créer la classe `Library`
 
 Créez une classe Library pour gérer plusieurs livres. Elle aura les responsabilités suivantes :
