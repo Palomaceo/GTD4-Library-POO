@@ -43,9 +43,9 @@ class Book {
         $this->title = $title;
     }
 
-    public function __toString(): void 
+    public function __toString(): string 
     {
-        echo "Title: {$this->title}, ..." . PHP_EOL;
+        return "Title: {$this->title}, ..." . PHP_EOL;
     }
 }
 ```
