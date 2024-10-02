@@ -31,6 +31,10 @@ L'objectif est de réviser la Programmation Orientée Objet (POO) en PHP tout en
 **💡 Exemple de code :**
 
 ```php
+<?php
+
+namespace Classes;
+
 class Book {
     private string $title;
 
@@ -82,6 +86,10 @@ Cette classe devra étendre **Library** et ajouter des méthodes pour interagir 
 
 **💡 Exemple de code :**
 ```php
+<?php
+
+namespace Classes;
+
 class LibraryDB extends Library {
     private PDO $pdo;
 
