@@ -80,7 +80,7 @@ Essayez de voir si vous arrivez à concevoir le code ! Je vous montrerais un exe
 
 ### 💾 Étape 4 : Créer la classe `LibraryDB`
 
-Cette classe devra étendre **Library** et ajouter des méthodes pour interagir avec la base de données via PDO :
+Cette classe devra hériter de **Library** et ajouter des méthodes pour interagir avec la base de données via PDO :
 
 * ➕ Ajouter un livre à la base de données.
 * 🗑️ Supprimer un livre de la base.
