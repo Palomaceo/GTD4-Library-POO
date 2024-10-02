@@ -5,9 +5,12 @@ namespace Classes;
 class Library {
     private array $books;
 
-    public function getAll() : array
+    public function getAll() : self
     {
-        return $this->books;
+        foreach ($this->books as $book) {
+            echo $book;
+        }
+        return $this;
     }
 
     public function addBook(Book $book): self
