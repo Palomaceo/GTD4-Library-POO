@@ -61,4 +61,46 @@ Essayez de voir si vous arrivez à concevoir le code ! Je vous montrerais un exe
 
 ## 🗄️ Partie 2 : Introduction à PDO et interaction avec la base de données (2h)
 
-Coming soon ...
+### 🛠️ Étape 3 : Configurer la base de données
+
+1. Créez une base de données MySQL nommée `library_db`.
+
+2. Créez une table `books` avec les colonnes suivantes :
+* `id` (int, auto_increment, clé primaire)
+* `title` (varchar)
+* `author` (varchar)
+* `pages` (int)
+* `isbn` (varchar)
+
+### 💾 Étape 4 : Créer la classe `LibraryDB`
+
+Cette classe devra étendre **Library** et ajouter des méthodes pour interagir avec la base de données via PDO :
+
+* ➕ Ajouter un livre à la base de données.
+* 🗑️ Supprimer un livre de la base.
+* 📜 Lister tous les livres à partir de la base.
+
+**💡 Exemple de code :**
+```php
+class LibraryDB extends Library {
+    private PDO $pdo;
+
+    public function __construct(PDO $pdo) {
+        $this->pdo = $pdo;
+    }
+
+    // Vos méthodes customs ci-dessous
+}
+```
+
+### 🧪 Étape 5 : Tester l'application
+
+* ➕ Ajoutez des livres à la bibliothèque et à la base de données.
+* 🗑️ Supprimez des livres en mémoire et dans la base de données.
+* 📜 Listez les livres depuis la base de données.
+
+**Exemple d'utilisation des commandes :** 
+* `add` : `php script.php add "Le Petit Prince" "Antoine de Saint-Exupéry" 96 "978-3-16-148410-0"` 
+* `remove` : `php script.php remove "978-3-16-148410-0"`
+* `list` : `php script.php list`
+
