@@ -43,8 +43,9 @@ class LibraryDB extends Library {
         $stmt = $this->pdo->query($req);
         $books = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach ($books as $book) {
-            echo "Title: {$book['title']}, Author: {$book['author']}, Pages: {$book['pages']}, ISBN: {$book['isbn']}" . PHP_EOL;
+        foreach ($books as $data) {
+            $book = new Book($data['title'], $data['author'], $data['pages'], $data['isbn']);
+            echo $book;
         }
         return $this;
     }
