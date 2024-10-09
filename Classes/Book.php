@@ -21,6 +21,21 @@ class Book {
         return "Title: {$this->title}, Author: {$this->author}, Pages: {$this->pages}, ISBN: {$this->isbn}" . PHP_EOL;
     }
 
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function getAuthor(): string
+    {
+        return $this->author;
+    }
+
+    public function getPages(): string
+    {
+        return $this->pages;
+    }
+
     public function getIsbn(): string
     {
         return $this->isbn;

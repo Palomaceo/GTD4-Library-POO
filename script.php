@@ -1,9 +1,16 @@
 <?php
 
 // Inclure les classes ici (Book, LibraryDB)
+use Classes\Book;
+use Classes\Library;
+use Classes\LibraryDB;
+
+require_once "./Classes/Book.php";
+require_once "./Classes/Library.php";
+require_once "./Classes/LibraryDB.php";
 
 $dsn = 'mysql:host=localhost;dbname=library_db;charset=utf8';
-$username = ''; // Ajouter votre nom d'utilisateur de bdd local (Exemple : root)
+$username = 'root'; // Ajouter votre nom d'utilisateur de bdd local (Exemple : root)
 $password = ''; // Ajouter votre mot de passe de bdd local
 
 try {
